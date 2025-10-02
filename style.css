@@ -198,6 +198,11 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
 /* Mise en place de la grille principale DESKTOP*/
 
 @media (min-width: 678px) {

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
@@ -15,7 +14,7 @@
 <body>
     <!-- Mon compte + derniers jours pour .. +  messagerie qui ouvre l'application mail + bouton déconnexion => formulaire-->
     <header>
-        <div class="HeaderMyAccount">
+        <div>
             <p>
                 MON COMPTE
                 <img src="Media/lock-fill.svg" alt="Icone Cadenas">
@@ -29,8 +28,8 @@
         </div>
         <div>
             <div>
-                <p id="MailLogout">
-                    <a class="aUnderline" href="mailto:xxxxx.paris@gmail.com">
+                <p>
+                    <a href="mailto:xxxxx.paris@gmail.com">
                         <img src="Media/envelope-fill.svg" alt="Icone lettre (message)">
                         Messagerie (2)
                     </a>
@@ -48,7 +47,7 @@
     </header>
     <!-- navbar cliquable avec liens morts | AJOUT de liens pour bootstap et la version classique-->
     <nav>
-        <ul class="NavList">
+        <ul>
             <li><a href="index.html"><img src="Media/house-fill.svg" alt="Bouton Home"></a></li>
             <li><a href="bootstrap.html"><img src="Media/bootstrap-fill.svg" alt="Bouton Bootstrap"></a></li>
             <li><a href="#">MES INFOS</a></li>
@@ -62,11 +61,11 @@
     <!--Bloc Principal-->
     <main>
         <!--Message de bienvenue H1-->
-        <section class="Title">
+        <section>
             <h1>BIENVENUE ENTREPRISE XXXXXXXXX</h1>
         </section>
         <!--Coordonées de l'entreprise (siret adresse téléphone mail => icones)-->
-        <section class="ContactDetails">
+        <section>
             <ul>
                 <li>
                     <img src="Media/pin-angle-fill.svg" alt="icone Pin">
@@ -93,7 +92,7 @@
             </ul>
         </section>
         <!--Tableau d'opérations (5 col / entête + 6 lignes)-->
-        <section class="Table">
+        <section>
             <table>
                 <caption><img src="Media/flag-fill.svg" alt="Icone Drapeau">
                     <h2>Derières Opérations</h2>
@@ -158,26 +157,26 @@
             <p>Dernière connexion le :<time datetime="2014-03-10"></time>10/03/2014 à 14:08</p>
         </aside>
         <!--Zone de notification (bordure semi-pleine, lien hypertexte) -->
-        <section class="Notification">
+        <section>
             <h2>URGENT !</h2>
-            <img class="rotate" src="Media/exclamation-triangle-fill.svg"
+            <img src="Media/exclamation-triangle-fill.svg"
                 alt="Icone Triangle & point d'exclamation /!\">
             <p>Il ne vous reste que <strong>3 jours</strong> pour remplir la déclaration nominative annuelle des
                 salaires (DNAS).
-                Pour faire votre déclaration, <a class="aUnderline" href="#">cliquez ici</a></p>
+                Pour faire votre déclaration, <a href="#">cliquez ici</a></p>
         </section>
         <!--Messagerie avec icone et lien hypertexte -->
-        <section class="Messaging">
+        <section>
             <h2>Messagerie</h2>
             <a href="mailto:xxxxx.paris@gmail.com">
                 <figure>
-                    <img id="BigMail" src="Media/envelope-fill.svg" alt="Le logo de Messagerie (lettre).">
-                    <figcaption class="aUnderline">Vous avez deux messages non-lus</figcaption>
+                    <img src="Media/envelope-fill.svg" alt="Le logo de Messagerie (lettre).">
+                    <figcaption>Vous avez deux messages non-lus</figcaption>
                 </figure>
             </a>
         </section>
         <!--Coordonées contact pro/conseiller (nom, numéro, mail => icones) -->
-        <section class="ProContactDetails">
+        <section>
             <h2>Contact PRO BTP</h2>
             <ul>
                 <li>
@@ -190,12 +189,12 @@
                 </li>
                 <li>
                     <img src="Media/envelope-fill.svg" alt="Icone mail">
-                    <a href="#" class="aUnderline">Envoyer un e-mail à votre conseiller</a>
+                    <a href="#">Envoyer un e-mail à votre conseiller</a>
                 </li>
             </ul>
         </section>
         <!--Panneau d'informations => nouveau, arrêt, exonérations, inscription au télépaiement => formulaire -->
-        <section class="InformationPanel">
+        <section>
             <img src="Media/lightning-fill.svg" alt="Icone éclair">
             <h2>Important</h2>
             <ul>
@@ -207,20 +206,20 @@
                 </li>
                 <li>
                     <p><img src="Media/caret-right-fill.svg" alt="Icone flèche vers la droite">
-                        <strong>Arrêt de travail > 90 jours</strong> : <span class="aUnderline">ce qui change au premier
+                        <strong>Arrêt de travail > 90 jours</strong> : <span>ce qui change au premier
                             janvier 2014</span>
                     </p>
                 </li>
                 <li>
                     <p>
                         <img src="Media/caret-right-fill.svg" alt="Icone flèche vers la droite">
-                        <strong>Exonérations sociales et fiscales</strong> : <span class="aUnderline">conformité des
+                        <strong>Exonérations sociales et fiscales</strong> : <span>conformité des
                             contrats prévoyance / frais de santé</span>
                     </p>
                 </li>
                 <li>
                     <p> <img src="Media/caret-right-fill.svg" alt="Icone flèche vers la droite">
-                        <a href="/logoutform.html"><strong class="aUnderline">Inscrivez-vous</strong></a> au télépaiement
+                        <a href="/logoutform.html"><strong>Inscrivez-vous</strong></a> au télépaiement
                     </p>
                 </li>
             </ul>
