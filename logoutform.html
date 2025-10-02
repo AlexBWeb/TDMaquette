@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <title>TD Maquette</title>
 </head>
-<!-- à faire -->
 
 <body>
     <main id="form">
         <section>
             <h2>Inscrivez-vous au télépaiement</h2>
-            <p>Pour vous incrire au <strong>télépaiement</strong>, remplissez le formulaire suivant et cliquez sur le bouton ENVOYER :</p>
+            <p>Pour vous incrire au <strong>télépaiement</strong>, remplissez le formulaire suivant et cliquez sur le
+                bouton ENVOYER :</p>
         </section>
-        <form action="" method="post">
+        <form action="#" method="post">
             <label for="name">Nom :</label>
             <input type="text" name="name" id="name" required>
             <label for="prénom">Prénom :</label>
@@ -41,8 +41,8 @@
                 <label for="optionC">option C</label>
             </fieldset>
             <label for="Tarif">choisissez le type d'abonnement: </label>
-            <select form required name="Tarif">
-                <option value=""></option>
+            <select required name="Tarif" id="Tarif">
+                <option value="" disabled selected>-- Choisissez un abonnement --</option>
                 <option value="mensuel">Règlement mensuel à 13€99/Mois</option>
                 <option value="trimestriel">Règlement Trimestriel à 9€99/Mois</option>
                 <option value="annuel">Règlement annuel à 6€99/Mois | LE MOINS CHER</option>
