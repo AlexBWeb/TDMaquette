@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
+    font-family:
 }
+
+h1 {
+    font-size: x-large;
+}
+
 /* Mise en place de la grille principale MOBILE */
 
 body {
@@ -17,7 +24,6 @@ header {
     grid-row: span 2 / span 2;
     display: flex;
     justify-content: space-between;
-    max-height: 3rem;
 }
 
 #MailLogout {
@@ -27,6 +33,25 @@ header {
 nav {
     grid-column: span 2 / span 2;
     grid-row-start: 3;
+    display: flex;
+    justify-content: space-around;
+
+}
+.NavList {
+    display: inline-flex;
+    gap : 10px;
+    border: solid 2px black;
+    border-bottom: solid 4px black;
+    justify-content: space-between;
+    border
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.NavList li {
+
+    padding: 1%;
+    border: inset 2px black;
 }
 
 main {
@@ -53,12 +78,22 @@ footer {
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
     grid-row-start: 2;
+    border: black solid 3px;
+    margin: 5px;
 }
 
+.ContactDetails ul li {
+    display: flex;
+    padding: 5px;
+}
+
+/* Tableau à faire */
 .Table {
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
     grid-row-start: 6;
+    border: black solid 3px;
+    margin: 5px;
 }
 
 aside {
@@ -70,6 +105,8 @@ aside {
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-row-start: 11;
+    border: black dashed 3px;
+    border-radius: 8px;
 }
 
 .Messaging {
