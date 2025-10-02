@@ -38,18 +38,17 @@ nav {
 
 }
 .NavList {
-    display: inline-flex;
-    gap : 10px;
     border: solid 2px black;
     border-bottom: solid 4px black;
-    justify-content: space-between;
     flex-wrap: wrap;
-    flex-basis: 100%;
+    flex-basis: 100%; 
+    display: inline;
+    text-align: center;
 }
 
-.NavList li {
-
-    padding: 1%;
+.NavList li  {
+    border-collapse: collapse;
+    padding: 2%;
     border: solid 2px black;
 }
 
@@ -86,13 +85,40 @@ footer {
     padding: 5px;
 }
 
-/* Tableau à faire */
+caption {
+    text-align: left;
+    caption-side: top;
+}
+
+caption img, h2 {
+    display: inline-flex;
+}
+
 .Table {
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
     grid-row-start: 6;
     border: black solid 3px;
     margin: 5px;
+}
+
+table {
+  border: black solid 3px;
+  margin: 3px;  
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+tr th, td {
+    text-align: center;
+    border-left: solid 2px black;
+}
+thead tr {
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(236, 236, 236)
 }
 
 aside {
@@ -112,6 +138,20 @@ aside {
     grid-row: span 2 / span 2;
     grid-row-start: 13;
     border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Messaging a figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#BigMail {
+    min-height: 5rem;
+    
 }
 
 .ProContactDetails {
@@ -141,6 +181,18 @@ a {
     text-decoration: underline;
 }
 
+.rotate {
+width:100px;
+height:100px;
+background: hidden;
+animation:rotate 5s infinite;
+animation-timing-function: cubic-bezier(1,0,.5,1);
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(0deg) } 
+    to { -webkit-transform: rotate(360deg) } 
+}
 
 /* Mise en place de la grille principale DESKTOP*/
 
@@ -161,6 +213,21 @@ header {
 nav {
     grid-column: span 2 / span 2;
     grid-row-start: 3;
+}
+
+.NavList {
+    display: flex;
+    border: solid 2px black;
+    border-bottom: solid 4px black;
+    flex-wrap: wrap;
+    flex-basis: 100%; 
+    text-align: center;
+}
+
+.NavList li  {
+    border-collapse: collapse;
+    padding: 2%;
+    border: solid 2px black;
 }
 
 main {
