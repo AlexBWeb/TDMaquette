@@ -20,6 +20,10 @@ header {
     max-height: 3rem;
 }
 
+#MailLogout {
+    text-align: end;
+}
+
 nav {
     grid-column: span 2 / span 2;
     grid-row-start: 3;
