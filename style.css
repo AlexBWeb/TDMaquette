@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* Mise en place de la grille principale MOBILE */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2px;
+}
+
+header {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+nav {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+main {
+    grid-column: span 2 / span 2;
+    grid-row: span 8 / span 8;
+    grid-row-start: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    gap: 2px;
+}
+
+footer {
+    grid-column: span 2 / span 2;
+    grid-row-start: 12;
+}
+
+/* Main grille interieure */
+.Title {
+    grid-column: span 3 / span 3;
+}
+
+.ContactDetails {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.Table {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-row-start: 6;
+}
+
+aside {
+    grid-column: span 3 / span 3;
+    grid-row-start: 10;
+}
+
+.Notification {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-row-start: 11;
+}
+
+.Messaging {
+    grid-row: span 2 / span 2;
+    grid-row-start: 13;
+}
+
+.ProContactDetails {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 13;
+}
+
+.InformationPanel {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-row-start: 15;
+}
+
+
+/* Mise en place de la grille principale DESKTOP*/
+
+@media (min-width: 978px) {
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2px;
+}
+
+header {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+nav {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+main {
+    grid-column: span 2 / span 2;
+    grid-row: span 8 / span 8;
+    grid-row-start: 4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 2px;
+}
+
+footer {
+    grid-column: span 2 / span 2;
+    grid-row-start: 12;
+}
+
+/* Main grille interieure */
+.Title {
+    grid-column: span 3 / span 3;
+}
+
+.ContactDetails {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.Table {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+
+aside {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.Notification {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.Messaging {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.ProContactDetails {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+.InformationPanel {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    grid-row-start: 7;
+}
+}
