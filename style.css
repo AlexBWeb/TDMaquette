@@ -194,6 +194,10 @@ animation-timing-function: cubic-bezier(1,0,.5,1);
     to { -webkit-transform: rotate(360deg) } 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
 /* Mise en place de la grille principale DESKTOP*/
 
 @media (min-width: 678px) {
@@ -222,6 +226,7 @@ nav {
     flex-wrap: wrap;
     flex-basis: 100%; 
     text-align: center;
+    justify-content: center;
 }
 
 .NavList li  {
