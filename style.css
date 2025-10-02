@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family:
+    font-family: 'Roboto Mono', Arial, Helvetica, sans-serif
 }
 
 h1 {
@@ -43,7 +43,6 @@ nav {
     border: solid 2px black;
     border-bottom: solid 4px black;
     justify-content: space-between;
-    border
     flex-wrap: wrap;
     flex-basis: 100%;
 }
@@ -51,7 +50,7 @@ nav {
 .NavList li {
 
     padding: 1%;
-    border: inset 2px black;
+    border: solid 2px black;
 }
 
 main {
@@ -61,7 +60,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(18, auto);
-    gap: 2px;
+    gap: 10px;
 }
 
 footer {
@@ -112,18 +111,26 @@ aside {
 .Messaging {
     grid-row: span 2 / span 2;
     grid-row-start: 13;
+    border: black solid 3px;
 }
 
 .ProContactDetails {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-row-start: 13;
+    border: black solid 3px;
+    
 }
 
 .InformationPanel {
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
     grid-row-start: 15;
+    border: black solid 3px;
+}
+
+footer {
+    background-color: lightgrey;
 }
 
 a {
@@ -133,6 +140,7 @@ a {
 .aUnderline {
     text-decoration: underline;
 }
+
 
 /* Mise en place de la grille principale DESKTOP*/
 
@@ -162,7 +170,7 @@ main {
     display: grid;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(11, auto);
-    gap: 2px;
+    gap: 10px;
 }
 
 footer {
