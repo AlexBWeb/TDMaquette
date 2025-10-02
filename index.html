@@ -11,30 +11,31 @@
 <body>
     <!-- Mon compte + derniers jours pour .. +  messagerie qui ouvre l'application mail + bouton déconnexion => formulaire-->
     <header>
-        <div>
+        <div class="HeaderMyAccount">
             <p>
                 MON COMPTE
+                <img src="Media/lock-fill.svg" alt="Icone Cadenas">
             </p>
-            <img src="Media/lock-fill.svg" alt="Icone Cadenas">
         </div>
         <div>
-            <img src="media/exclamation-triangle-fill.svg" alt="Icone Triangle & point d'exclamation /!\">
             <p>
+                <img src="media/exclamation-triangle-fill.svg" alt="Icone Triangle & point d'exclamation /!\">
                 Derniers jours pour votre DNAS !
             </p>
         </div>
-        <div>
-            <div>
-                <img src="Media/envelope-fill.svg" alt="Icone lettre (message)">
+        <div class="HeaderRight">
+            <div class="HeaderMail">
                 <p>
-                    Messagerie (2)
+                    <a class="aUnderline" href="mailto:xxxxx.paris@gmail.com">
+                        <img src="Media/envelope-fill.svg" alt="Icone lettre (message)">
+                        Messagerie (2)
+                    </a>
+                    <a href="#">Déconnexion
+                        <img src="Media/x-lg.svg" alt="Icone Croix">
+                    </a>
                 </p>
             </div>
-            <div>
-                <a>Déconnexion</a>
-                <img src="Media/x-lg.svg" alt="Icone Croix">
-            </div>
-            <div>
+            <div class="HeaderInfo">
                 <p>
                     Entreprise XXXXXXXXX | N<sup>o</sup> Siret 0000000000
                 </p>
@@ -157,7 +158,7 @@
             <img src="Media/exclamation-triangle-fill.svg" alt="Icone Triangle & point d'exclamation /!\">
             <p>Il ne vous reste que <strong>3 jours</strong> pour remplir la déclaration nominative annuelle des
                 salaires (DNAS).
-                Pour faire votre déclaration, <a href="#">cliquez ici</a></p>
+                Pour faire votre déclaration, <a class="aUnderline" href="#">cliquez ici</a></p>
         </section>
         <!--Messagerie avec icone et lien hypertexte -->
         <section class="Messaging">
@@ -173,12 +174,18 @@
         <section class="ProContactDetails">
             <h2>Contact PRO BTP</h2>
             <ul>
-                <li><img src="Media/person-fill.svg" alt="Icone buste"></li>
-                <li>Votre conseiller : JEAN DUPONT</li>
-                <li><img src="Media/telephone-fill.svg" alt="Icone Téléphone"></li>
-                <li>04 04 04 04 04</li>
-                <li><img src="Media/envelope-fill.svg" alt="Icone mail"></li>
-                <li>Envoyer un e-mail à votre conseiller</li>
+                <li>
+                    <img src="Media/person-fill.svg" alt="Icone buste">
+                    Votre conseiller : JEAN DUPONT
+                </li>
+                <li>
+                    <img src="Media/telephone-fill.svg" alt="Icone Téléphone">
+                    04 04 04 04 04
+                </li>
+                <li>
+                    <img src="Media/envelope-fill.svg" alt="Icone mail">
+                    <a href="#" class="aUnderline">Envoyer un e-mail à votre conseiller</a>
+                </li>
             </ul>
         </section>
         <!--Panneau d'informations => nouveau, arrêt, exonérations, inscription au télépaiement => formulaire -->

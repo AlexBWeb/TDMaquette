@@ -7,14 +7,17 @@
 
 body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(12, auto);
     gap: 2px;
 }
 
 header {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
+    display: flex;
+    justify-content: space-between;
+    max-height: 3rem;
 }
 
 nav {
@@ -27,8 +30,8 @@ main {
     grid-row: span 8 / span 8;
     grid-row-start: 4;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(18, auto);
     gap: 2px;
 }
 
@@ -82,14 +85,22 @@ aside {
     grid-row-start: 15;
 }
 
+a {
+    color: black;
+}
+
+.aUnderline {
+    text-decoration: underline;
+}
 
 /* Mise en place de la grille principale DESKTOP*/
 
-@media (min-width: 978px) {
+@media (min-width: 678px) {
+
 body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(12, auto);
     gap: 2px;
 }
 
@@ -108,8 +119,8 @@ main {
     grid-row: span 8 / span 8;
     grid-row-start: 4;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(11, auto);
     gap: 2px;
 }
 
